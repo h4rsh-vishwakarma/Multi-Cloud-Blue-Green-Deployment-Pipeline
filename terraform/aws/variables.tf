@@ -1,9 +1,9 @@
 variable "env_color" {
-  description = "Deployment का रंग (blue or green)."
+  description = "Colour of Deployment (blue or green)."
   type        = string
 }
 
 variable "docker_image_tag" {
-  description = "Deploy करने वाली Docker image का टैग।"
+  description = "Tag of docker"
   type        = string
 }
