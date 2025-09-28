@@ -3,12 +3,12 @@ import os
 
 app = Flask(__name__)
 
-# हम ENV_COLOR वेरिएबल से पता लगाएंगे कि यह Blue है या Green
+# for the find out the colour
 env_color = os.environ.get('ENV_COLOR', 'Blue')
 
 @app.route('/')
 def hello():
-    # यह मैसेज वेबसाइट पर दिखेगा
+ # show in the web this message
     return f"<h1>Hello! Main {env_color} environment se live hoon.</h1>"
 
 if __name__ == '__main__':
